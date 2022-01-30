@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dp24">24dp</dimen>
+
+    <dimen name="very_small_padding">10dp</dimen>
+    <dimen name="small_margin">4dp</dimen>
+    <dimen name="normal_padding">16dp</dimen>
+    <dimen name="large_padding">32dp</dimen>
+</resources>

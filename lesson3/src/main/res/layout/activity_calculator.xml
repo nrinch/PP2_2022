@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".CalculatorActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/separator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="240dp" />
+
+    <TextView
+        android:id="@+id/ac_input_field"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="right"
+        android:paddingHorizontal="@dimen/normal_padding"
+        android:textColor="@color/black"
+        android:textSize="@dimen/title_font_size"
+        app:layout_constraintBottom_toBottomOf="@id/separator"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/ac_clean"
+        style="@style/AdditionalFunctionsButtonsStyle"
+        android:onClick="onClick"
+        android:text="AC"
+        app:layout_constraintBottom_toTopOf="@id/ac_seven"
+        app:layout_constraintEnd_toStartOf="@id/ac_change"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/separator" />
+
+    <Button
+        android:id="@+id/ac_change"
+        style="@style/AdditionalFunctionsButtonsStyle"
+        android:onClick="onClick"
+        android:text="+/-"
+        app:layout_constraintBottom_toBottomOf="@id/ac_clean"
+        app:layout_constraintEnd_toStartOf="@id/ac_percents"
+        app:layout_constraintStart_toEndOf="@id/ac_clean"
+        app:layout_constraintTop_toTopOf="@id/ac_clean" />
+
+
+    <Button
+        android:id="@+id/ac_percents"
+        style="@style/AdditionalFunctionsButtonsStyle"
+        android:onClick="onClick"
+        android:text="%"
+        app:layout_constraintBottom_toBottomOf="@id/ac_clean"
+        app:layout_constraintEnd_toStartOf="@id/ac_div"
+        app:layout_constraintStart_toEndOf="@id/ac_change"
+        app:layout_constraintTop_toTopOf="@id/ac_clean" />
+
+    <Button
+        android:id="@+id/ac_div"
+        style="@style/OperationButtonsStyle"
+        android:onClick="onClick"
+        android:text="/"
+        app:layout_constraintBottom_toBottomOf="@id/ac_clean"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ac_percents"
+        app:layout_constraintTop_toTopOf="@id/ac_clean" />
+
+    <Button
+        android:id="@+id/ac_seven"
+        style="@style/CalculatorButtonsStyle"
+        android:onClick="onClick"
+        android:text="7"
+        app:layout_constraintBottom_toTopOf="@id/ac_four"
+        app:layout_constraintEnd_toStartOf="@id/ac_eight"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ac_clean" />
+
+    <Button
+        android:id="@+id/ac_eight"
+        style="@style/CalculatorButtonsStyle"
+        android:onClick="onClick"
+        android:text="8"
+        app:layout_constraintBottom_toBottomOf="@id/ac_seven"
+        app:layout_constraintEnd_toStartOf="@id/ac_nine"
+        app:layout_constraintStart_toEndOf="@id/ac_seven"
+        app:layout_constraintTop_toTopOf="@id/ac_seven" />
+
+
+    <Button
+        android:id="@+id/ac_nine"
+        style="@style/CalculatorButtonsStyle"
+        android:onClick="onClick"
+        android:text="9"
+        app:layout_constraintBottom_toBottomOf="@id/ac_seven"
+        app:layout_constraintEnd_toStartOf="@id/ac_mult"
+        app:layout_constraintStart_toEndOf="@id/ac_eight"
+        app:layout_constraintTop_toTopOf="@id/ac_seven" />
+
+    <Button
+        android:id="@+id/ac_mult"
+        style="@style/OperationButtonsStyle"
+        android:onClick="onClick"
+        android:text="*"
+        app:layout_constraintBottom_toBottomOf="@id/ac_seven"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ac_nine"
+        app:layout_constraintTop_toTopOf="@id/ac_seven" />
+
+    <Button
+        android:id="@+id/ac_four"
+        style="@style/CalculatorButtonsStyle"
+        android:onClick="onClick"
+        android:text="4"
+        app:layout_constraintBottom_toTopOf="@id/ac_one"
+        app:layout_constraintEnd_toStartOf="@id/ac_five"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ac_seven" />
+
+    <Button
+        android:id="@+id/ac_five"
+        style="@style/CalculatorButtonsStyle"
+        android:onClick="onClick"
+        android:text="5"
+        app:layout_constraintBottom_toBottomOf="@id/ac_four"
+        app:layout_constraintEnd_toStartOf="@id/ac_six"
+        app:layout_constraintStart_toEndOf="@id/ac_four"
+        app:layout_constraintTop_toTopOf="@id/ac_four" />
+
+
+    <Button
+        android:id="@+id/ac_six"
+        style="@style/CalculatorButtonsStyle"
+        android:onClick="onClick"
+        android:text="6"
+        app:layout_constraintBottom_toBottomOf="@id/ac_four"
+        app:layout_constraintEnd_toStartOf="@id/ac_minus"
+        app:layout_constraintStart_toEndOf="@id/ac_five"
+        app:layout_constraintTop_toTopOf="@id/ac_four" />
+
+    <Button
+        android:id="@+id/ac_minus"
+        style="@style/OperationButtonsStyle"
+        android:onClick="onClick"
+        android:text="-"
+        app:layout_constraintBottom_toBottomOf="@id/ac_four"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ac_six"
+        app:layout_constraintTop_toTopOf="@id/ac_four" />
+
+    <Button
+        android:id="@+id/ac_one"
+        style="@style/CalculatorButtonsStyle"
+        android:onClick="onClick"
+        android:text="1"
+        app:layout_constraintBottom_toTopOf="@id/ac_zero"
+        app:layout_constraintEnd_toStartOf="@id/ac_two"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ac_four" />
+
+    <Button
+        android:id="@+id/ac_two"
+        style="@style/CalculatorButtonsStyle"
+        android:onClick="onClick"
+        android:text="2"
+        app:layout_constraintBottom_toBottomOf="@id/ac_one"
+        app:layout_constraintEnd_toStartOf="@id/ac_three"
+        app:layout_constraintStart_toEndOf="@id/ac_one"
+        app:layout_constraintTop_toTopOf="@id/ac_one" />
+
+
+    <Button
+        android:id="@+id/ac_three"
+        style="@style/CalculatorButtonsStyle"
+        android:onClick="onClick"
+        android:text="3"
+        app:layout_constraintBottom_toBottomOf="@id/ac_one"
+        app:layout_constraintEnd_toStartOf="@id/ac_plus"
+        app:layout_constraintStart_toEndOf="@id/ac_two"
+        app:layout_constraintTop_toTopOf="@id/ac_one" />
+
+    <Button
+        android:id="@+id/ac_plus"
+        style="@style/OperationButtonsStyle"
+        android:onClick="onClick"
+        android:text="+"
+        app:layout_constraintBottom_toBottomOf="@id/ac_one"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ac_three"
+        app:layout_constraintTop_toTopOf="@id/ac_one" />
+
+    <Button
+        android:id="@+id/ac_zero"
+        style="@style/CalculatorButtonsStyle"
+        android:onClick="onClick"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/ac_point"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintHorizontal_weight="2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ac_one" />
+
+    <Button
+        android:id="@+id/ac_point"
+        style="@style/CalculatorButtonsStyle"
+        android:onClick="onClick"
+        android:text="."
+        app:layout_constraintBottom_toBottomOf="@id/ac_zero"
+        app:layout_constraintEnd_toStartOf="@id/ac_result"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@id/ac_zero"
+        app:layout_constraintTop_toTopOf="@id/ac_zero" />
+
+
+    <Button
+        android:id="@+id/ac_result"
+        style="@style/OperationButtonsStyle"
+        android:onClick="onClick"
+        android:text="="
+        app:layout_constraintBottom_toBottomOf="@id/ac_zero"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@id/ac_point"
+        app:layout_constraintTop_toTopOf="@id/ac_zero" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

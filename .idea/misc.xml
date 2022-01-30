@@ -6,6 +6,13 @@
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.325" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.30932971014492755" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.325" />
+        <entry key="lesson3/src/main/res/drawable/circle.xml" value="0.33055555555555555" />
+        <entry key="lesson3/src/main/res/drawable/ic_launcher_background.xml" value="0.33055555555555555" />
+        <entry key="lesson3/src/main/res/drawable/rounded_rectangle.xml" value="0.33055555555555555" />
+        <entry key="lesson3/src/main/res/layout-land/activity_main.xml" value="0.26837606837606837" />
+        <entry key="lesson3/src/main/res/layout/activity_calculator.xml" value="0.1" />
+        <entry key="lesson3/src/main/res/layout/activity_main.xml" value="0.3597122302158273" />
+        <entry key="lesson3/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.3380398671096346" />
       </map>
     </option>
   </component>
