@@ -21,6 +21,10 @@
         <entry key="lesson4/src/main/res/layout/fragment_main.xml" value="0.1336675020885547" />
         <entry key="lesson4/src/main/res/layout/fragment_secondary.xml" value="0.1336675020885547" />
         <entry key="lesson4/src/main/res/menu/bottom_nav_menu.xml" value="0.14786324786324787" />
+        <entry key="lesson5/src/main/res/drawable/circle_shape.xml" value="0.28675213675213673" />
+        <entry key="lesson5/src/main/res/layout/activity_list.xml" value="0.25" />
+        <entry key="lesson5/src/main/res/layout/activity_main.xml" value="0.335" />
+        <entry key="lesson5/src/main/res/layout/item_list.xml" value="0.24547101449275363" />
       </map>
     </option>
   </component>
