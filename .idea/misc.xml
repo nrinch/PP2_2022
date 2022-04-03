@@ -25,6 +25,9 @@
         <entry key="lesson5/src/main/res/layout/activity_list.xml" value="0.25" />
         <entry key="lesson5/src/main/res/layout/activity_main.xml" value="0.335" />
         <entry key="lesson5/src/main/res/layout/item_list.xml" value="0.24547101449275363" />
+        <entry key="lesson6/src/main/res/layout/activity_dogs_cat.xml" value="0.1" />
+        <entry key="lesson6/src/main/res/layout/activity_genderize.xml" value="0.1" />
+        <entry key="lesson6/src/main/res/layout/activity_main.xml" value="0.1" />
       </map>
     </option>
   </component>

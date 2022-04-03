@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">lesson6</string>
+    <string name="insert">Insert</string>
+    <string name="update">Update</string>
+    <string name="get_fact_about_cat">Get fact about cat</string>
+    <string name="to_dogs_and_cats">To Dogs and Cats</string>
+    <string name="result">Result:</string>
+    <string name="check">Check</string>
+    <string name="your_name">Your name</string>
+    <string name="go_to_genderize">Go to Genderize</string>
+</resources>
